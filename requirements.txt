@@ -1,0 +1,15 @@
+accelerate==0.21.0
+transformers==4.38.2
+tokenizers==0.15.2
+langchain==0.1.11
+langchainhub==0.1.15
+bitsandbytes==0.40.0
+einops==0.6.1
+dash==2.16.1
+sentence_transformers==2.5.1
+dash-bootstrap-components==1.4.1
+numpy==1.24.3
+pandas==2.0.2
+tqdm==4.65.0
+torch==2.0.1
+chromadb==0.4.24
