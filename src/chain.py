@@ -8,6 +8,17 @@ from src.rag import load_chroma_instance
 
 
 def get_rag_conversation_chain() -> RunnableSerializable:
+    """Initialize and return a RAG (Retrieval-Augmented Generation) conversation chain.
+
+    This function creates a conversation chain by integrating a language model with
+    a document retriever. It uses a language model to generate responses based on
+    the prompts provided and augmented with information retrieved from a set of
+    documents.
+
+    Returns:
+        A `RunnableSerializable` instance that represents the assembled RAG
+        conversation chain.
+    """
     llm = get_llm()
     retriever = load_chroma_instance().as_retriever()
     prompt = hub.pull("rlm/rag-prompt")
