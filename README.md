@@ -3,6 +3,11 @@
 To run this code, you will need to download data from Kaggle ([link](https://www.kaggle.com/datasets/allen-institute-for-ai/CORD-19-research-challenge/datahttps://www.kaggle.com/datasets/allen-institute-for-ai/CORD-19-research-challenge/data)).
 Put the 'archive.zip' file in the root of the repo. 
 
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
 Then, run this code to create Chroma instance and populate it with documents:
 ```bash
 python src/rag.py
